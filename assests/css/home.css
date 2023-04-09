@@ -1,0 +1,33 @@
+#home {
+  padding: 20px;
+  border-bottom: 2px solid black;
+  width: 50%;
+  margin: auto; }
+  #home h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px; }
+  #home button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 30px;
+    font-size: 20px;
+    text-align: center; }
+    #home button a {
+      text-decoration: none;
+      text-transform: capitalize; }
+  #home .start {
+    margin: 10px;
+    text-align: left;
+    padding: 10px; }
+    #home .start a {
+      font-size: 26px;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: black; }
+      #home .start a:hover {
+        border-bottom: 1px solid black;
+        color: blue; }
+      #home .start a i {
+        padding-right: 10px; }

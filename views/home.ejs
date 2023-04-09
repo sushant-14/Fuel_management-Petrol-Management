@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="/css/home.css">
+<div id="home">
+
+
+    <h1><i class='fas fa-gas-pump' style='font-size:36px'></i> Fuel Management System</h1>
+
+    <!-- <%= title%> -->
+
+    <!-- <%= all_users %><br> -->
+    <!-- <%=admin%> -->
+ 
+    <!-- <%=locals.user%> -->
+
+   
+<%if(locals.user){%>
+
+    <%if(user.id==admin){%>
+
+        <h1>Admin</h1>
+        <button>
+            <a href="/users/about/<%=admin%>">
+                Check All Staff
+            </a>               
+        </button>
+        <button>
+            <a href="/users/filling/">Fill the Tank</a>
+        </button>
+        <button>
+            <a href="/users/slip/">All Slip</a>
+        </button>
+
+        <%}else{%>
+            <% for (u of all_users){%>
+                <%if(u.id==admin){%>
+                    <%}else{%>
+                <p class="start">
+                    <a href="/users/about/<%=u.id%>">
+                        <i class='fas fa-user-alt' style='font-size:24px'></i><%=u.name%>
+                    </a>               
+                </p>
+                
+                <%}%>
+                <%}%>
+            <%}%>
+    <%}else{%>
+        <% for (u of all_users){%>
+            <%if(u.id==admin){%>
+                
+                <%}else{%>
+             
+        <p class="start">
+            <a href="/users/about/<%=u.id%>">
+                <i class='fas fa-user-alt' style='font-size:24px'></i> <%=u.name%>
+            </a>               
+        </p>
+                  
+            <%}%>
+<%}%>
+<%}%>
+
+</div>
+

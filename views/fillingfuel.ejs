@@ -1,0 +1,26 @@
+<!-- <%=title%>  -->
+<link rel="stylesheet" href="/css/fillingfuel.css">
+<div class="fillingfuel">
+
+    <h1>Filling fuel</h1>
+    
+    <form action="/users/filling/add" method="post">
+   
+        <select name="type" id="" required>
+            <option value="">Select Fuel</option>
+            <option value="Petrol">Petrol</option>
+            <option value="CNG">CNG</option>
+            <option value="Disel">Disel</option>
+        </select>
+        
+        <input type="number" name="quantity" placeholder="Quantity">
+        <input type="number" name="price" placeholder="Price">
+        <input type="submit" value="Fill the tank">
+    </form>
+    
+    <button>
+        <a href="/users/filling/checkstock">
+            Check the stock
+        </a>
+    </button>
+</div>

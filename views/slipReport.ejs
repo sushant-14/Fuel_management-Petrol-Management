@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="/css/slipReport.css">
+<!-- <%=title%> -->
+
+<!-- <%=slip%> -->
+
+<!-- <%=updateStock%> -->
+
+<div id="paymentslip">
+    <h1>Payment Slip</h1>
+    <table>
+        <tr>
+            <th>Customer</th>
+            <td style="text-transform:capitalize;"><%=slip.customer%></td>
+        </tr>
+        <tr>
+            <th>Date</th> 
+            <td><%=slip.date.toLocaleDateString()%></td>
+        </tr>
+        <tr>
+            <th>Day</th>
+            <td><%=slip.day%></td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td><%=slip.time%></td>
+        </tr>
+        
+        <tr>
+            <th>Fuel</th>
+            <td><%=slip.fuel%></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td><i class="fa fa-rupee" style="font-size:20px">&nbsp;<%=slip.price%>/L</i></td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td><%=slip.quantity%> L</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <td><i class="fa fa-rupee" style="font-size:20px">&nbsp;<%=slip.total%></i></td>
+        </tr>
+        <tr>
+            <th>Payment Mode</th>
+            <td><%=slip.payment%></td>
+        </tr>
+    </table>
+
+</div>
+<center>
+    
+    <button onclick="printPaymentSlip()">Print Slip</button>
+</center>
+<script>
+    function printPaymentSlip() {
+      var printContents = document.getElementById("paymentslip").innerHTML;
+      var originalContents = document.body.innerHTML;
+      document.body.innerHTML = printContents;
+      window.print();
+      document.body.innerHTML = originalContents;
+    }
+</script>
+    
+    

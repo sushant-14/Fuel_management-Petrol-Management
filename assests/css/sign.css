@@ -1,0 +1,18 @@
+.sign {
+  text-align: center;
+  border: 2px solid black; }
+  .sign h1 {
+    text-transform: capitalize; }
+  .sign form input {
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px 40px 10px 0px;
+    border: none;
+    border-bottom: 2px solid black; }
+  .sign form button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: black; }

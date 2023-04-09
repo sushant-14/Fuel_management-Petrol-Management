@@ -1,0 +1,36 @@
+<!-- <%=title%> -->
+<link rel="stylesheet" href="/css/report.css">
+<div class="report">
+
+
+<h1>Transactions</h1>
+<!-- <%=filter%> -->
+    <table>
+        <tr>
+            <th>Customer</th>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Fuel</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Payment</th>
+        </tr>
+        <%for(i of filter){%>
+            <tr>
+                
+                <td><%=i.customer%></td>
+                <td><%=i.date.toLocaleDateString()%></td>
+                <td><%=i.day%></td>
+                <td><%=i.fuel%></td>
+                <td><%=i.quantity%></td>
+                <td><%=i.price%></td>
+                <td><%=i.total%></td>
+                <td><%=i.payment%></td>
+    
+            </tr>
+    
+            <%}%>
+      
+    </table>
+</div>

@@ -1,0 +1,20 @@
+header {
+  background-color: black; }
+  header nav {
+    color: wheat; }
+    header nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 15px;
+      font-size: 30px; }
+      header nav ul li {
+        display: inline;
+        text-transform: capitalize;
+        padding: 14px 16px; }
+        header nav ul li a {
+          text-align: center;
+          color: wheat;
+          text-decoration: none; }
+          header nav ul li a:hover {
+            background-color: white;
+            color: black; }

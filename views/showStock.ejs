@@ -1,0 +1,24 @@
+<!-- <%=title%> -->
+<link rel="stylesheet" href="/css/fillingfuel.css">
+<div class="showStock">
+    <h1>Show Stock</h1>
+    <!-- <%=allStock%> -->
+    
+    <table>
+        <tr>
+            <th>Fuel</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Add</th>
+        </tr>
+        <%for(i of allStock){%>
+        <tr>
+            <td><%=i.type%></td>
+            <td><%=i.quantity%> L</td>
+            <td><i class="fa fa-rupee" style="font-size:20px">&nbsp;<%=i.price%> /L</i></td>
+            <td><a href="/users/filling/<%=i.id%>">Add More</a></td>
+        </tr>
+        <%}%>
+    </table>
+
+</div>

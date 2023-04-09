@@ -1,0 +1,30 @@
+header{
+    // margin: 0;
+    background-color: black;
+    nav{
+        color: wheat;
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 15px;
+            font-size: 30px;
+            li{
+                display: inline;
+                text-transform: capitalize;
+                padding: 14px 16px;
+                // float: left;
+                a{
+                    text-align: center;
+                    color: wheat;
+                    text-decoration: none;
+                    &:hover{
+                     background-color: white; 
+                     color: black;  
+                    }
+                }
+                
+            }
+        }
+    }
+}
+

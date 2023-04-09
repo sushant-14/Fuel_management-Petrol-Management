@@ -1,0 +1,119 @@
+<link rel="stylesheet" href="/css/about.css">
+
+<!-- <%= title%> -->
+<!-- <h1> about pages 1</h1> -->
+<!-- <%=profile_user.id%> -->
+<!-- <br/> -->
+<!-- <%=user%> -->
+
+<div id="about">
+<%if(user.id=="642e5ba283446e338b4734f2"){%>
+    <h1>Update Admin</h1>
+    <!-- <h3>admin update their data</h3> -->
+    <form action="/users/update/642e5ba283446e338b4734f2" method="post" class="user">
+        <label for="">Name</label>
+        <input type="text" name="name" placeholder="UserName" value="<%=profile_user.name%>"><br>
+        <label for="">Email</label>
+        <input type="email" name="email" placeholder="UserEmail" value="<%=profile_user.email%>"><br>
+        <input type="submit" value="Update">
+    </form>
+    <!-- <p><%=all_users%></p> -->
+    <table>
+        <h2>All Staff Member</h2>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <%for(u of all_users){%>
+        <tr>
+            <td><%=u.name%></td>
+            <td><%=u.email%></td>
+            <td><%=u.password%></td>
+        </tr>
+        <%}%>
+    </table>
+  
+<%}else if(user.id == profile_user.id) {%>  
+    
+    <h1>Update Staff</h1>
+    <div class="update">
+        <h3>User Information</h3>
+        <p><i class='fas fa-user-alt' style='font-size:24px'></i><%=profile_user.name%></p>
+        <p><i class="fa fa-envelope" style="font-size:24px"></i><%=profile_user.email%></p>
+    </div>
+    <form action="/users/update/<%=profile_user.id%>" method="post" class="user">
+        <label for="">Name</label>
+        <input type="text" name="name" placeholder="UserName" value="<%=profile_user.name%>"><br>
+        <label for="">Email</label>
+        <input type="email" name="email" placeholder="UserEmail" value="<%=profile_user.email%>"><br>
+        <input type="submit" value="Updates">
+    </form>
+    <hr>
+    <div class="registration">
+        <h1>Generate fuel Receipt here!!</h1>
+        <form action="/users/slip/slipreport" method="post">
+            <label for="">Date:
+            <input type="date" name="date">
+            </label>
+            <label for="">Day:
+            <select name="day" id="">
+                <option value="">Select Day</option>
+                <option value="Mon">Mon</option>
+                <option value="Tue">Tue</option>
+                <option value="Wed">Wed</option>
+                <option value="Thur">Thur</option>
+                <option value="Fri">Fri</option>
+                <option value="Sat">Sat</option>
+                <option value="Sun">Sun</option>
+            </select>
+            </label>
+            <label for="">Time:
+            <input type="time" name="time">
+            </label>
+            <label for="">Customer Name:
+                <input type="text" name="customer" placeholder="Customer name" required>
+            </label>
+            <label for="">Fuel select:
+            <select name="fuel" id="">
+                <option value="">Select fuel</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Disel">Disel</option>
+                <option value="CNG">CNG</option>
+            </select>
+             </label>
+             <label for="">Quantity:
+            <input type="number" name="quantity" placeholder="Quantity">
+        </label>
+            <input type="hidden" name="user" value="<%=profile_user.id%>">
+            <label>Select mode:
+            <label for="">UPI
+            <input type="radio" name="payment" value="UPI">
+        </label>
+            <label for="">CARD
+            <input type="radio" name="payment" value="CARD">
+        </label>
+            <label for="">CASH
+            <input type="radio" name="payment" value="Cash">
+        </label></label>
+
+        <input type="submit" value="Generate Slip">
+
+        </form>
+    </div>
+
+
+
+    <!-- <p><%=user.name%></p> -->
+<%}else{%>
+    <div class="update">
+
+        <h3>Friend</h3>
+            <p><i class='fas fa-user-alt' style='font-size:24px'></i><%=profile_user.name%></p>
+            <p><i class="fa fa-envelope" style="font-size:24px"></i><%=profile_user.email%></p>
+    </div>
+
+    <%}%>
+
+</div>
+<script src="/js/about.js"></script>

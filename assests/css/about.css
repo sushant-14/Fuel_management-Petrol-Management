@@ -1,0 +1,76 @@
+#about {
+  text-align: center; }
+  #about table {
+    margin: auto; }
+    #about table td, #about table th {
+      border-bottom: 2px solid black;
+      padding: 10px 20px;
+      font-size: 20px; }
+  #about .update {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+    position: absolute;
+    top: 18%;
+    left: 20px;
+    width: 30%;
+    text-align: left; }
+    #about .update h3 {
+      text-align: center;
+      font-size: 26px; }
+    #about .update p {
+      font-size: 20px; }
+      #about .update p i {
+        padding: 10px; }
+  #about .user label,
+  #about .user input {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 10px; }
+  #about .user input[type="submit"]:hover {
+    background-color: black;
+    color: white; }
+  #about .registration {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 10px 10px 8px #888888;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto; }
+    #about .registration form {
+      text-align: left;
+      padding-left: 50px; }
+      #about .registration form label {
+        font-size: 22px;
+        display: block;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        #about .registration form label input {
+          border: none;
+          border-bottom: 2px solid black;
+          font-size: 20px;
+          padding: 10px 20px 10px 5px;
+          margin-bottom: 10px; }
+        #about .registration form label select, #about .registration form label option {
+          padding: 10px 20px;
+          font-size: 20px;
+          border: none;
+          border-bottom: 2px solid black; }
+      #about .registration form input[type="submit"] {
+        display: block;
+        padding: 10px 20px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        border-bottom: 2px solid black; }
+        #about .registration form input[type="submit"]:hover {
+          background-color: black;
+          color: white; }

@@ -1,0 +1,50 @@
+<!-- <%=title%> -->
+<link rel="stylesheet" href="/css/report.css">
+<div class="report">
+
+
+<h1>Search Transactions</h1>
+<!-- <%=report%> -->
+<div class="search">
+    <h2>Search By Date</h2>
+    <form action="/users/slip/filter" method="post">
+        <label for="">From:</label>
+        <input type="date"name="date1">
+        <label for="">To:</label>
+        <input type="date" name="date2">
+        <input type="submit" value="Search">
+    </form>
+</div>
+
+<h1>All Transactions</h1>
+<table>
+
+    <tr>
+        <th>Customer</th>
+        <th>Date</th>
+        <th>Day</th>
+        <th>Fuel</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+        <th>Payment</th>
+    </tr>
+
+    <%for(i of report){%>
+        <tr>
+            
+            <td><%=i.customer%></td>
+            <td><%=i.date.toLocaleDateString()%></td>
+            <td><%=i.day%></td>
+            <td><%=i.fuel%></td>
+            <td><%=i.quantity%></td>
+            <td><%=i.price%></td>
+            <td><%=i.total%></td>
+            <td><%=i.payment%></td>
+
+        </tr>
+
+        <%}%>
+</table>
+
+</div>

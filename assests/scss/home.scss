@@ -1,0 +1,48 @@
+#home{
+    padding: 20px;
+    border-bottom: 2px solid black;
+    width:50%;
+    margin: auto;
+
+    h1{
+
+        text-align: center;
+        padding: 20px;
+        font-size: 40px;
+    
+    }
+    button{
+        padding: 10px 20px;
+        border:none;
+        border-radius: 10px;
+        margin:30px;
+        font-size: 20px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }
+    
+    .start{
+        margin:10px;
+        text-align: left;
+        padding: 10px;
+        a{
+            font-size :26px;
+            text-decoration: none;
+            text-transform: capitalize;
+            color:black;
+            // padding-left: 10px;
+            
+            &:hover{
+                border-bottom: 1px solid black;
+                color:blue;
+            }
+            i{
+                padding-right: 10px;
+            }
+        }
+    }
+
+}

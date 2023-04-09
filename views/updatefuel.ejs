@@ -1,0 +1,22 @@
+<!-- <%=title%> -->
+<link rel="stylesheet" href="/css/fillingfuel.css">
+<div class="update">
+<h1>Update Price and Add Fuel</h1>
+<h4>Fuel: <%=type.type%></h4>
+<h4>Quantity: <%=type.quantity%></h4>
+<h4>Price: <%=type.price%></h4>
+<!-- <%=type%> -->
+<form action="/users/filling/update/<%=type.id%>" method="post">
+    <label for="">Quantity:
+    <input type="number" name="quantity" placeholder="Quantity" value="<%=type.quantity%>">
+    </label><br>
+    <label for="">Price:
+    <input type="number" name="price" placeholder="Price" value="<%=type.price%>">
+</label>
+    <input type="submit" value="Update Stock">
+</form>
+
+<button>
+    <a href="/users/filling/checkstock/">Back</a>
+</button>
+</div>

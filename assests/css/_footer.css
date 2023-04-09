@@ -1,0 +1,11 @@
+footer {
+  background-color: black;
+  width: 100%;
+  color: wheat;
+  font-size: 26px;
+  margin: auto;
+  text-align: center; }
+  footer a {
+    text-decoration: none;
+    color: wheat;
+    padding: 0px 30px; }

@@ -1,0 +1,30 @@
+.report{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+
+    width:50%;
+    margin: auto;
+    text-align: center;
+    .search{
+        input{
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+        }
+        label{
+            padding: 10px 20px;
+            font-size: 20px;
+
+        }
+    }
+    table{
+        margin: auto;
+        th,td{
+            padding: 10px 20px;
+            border-bottom: 2px solid black;
+        }
+    }
+}   

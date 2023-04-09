@@ -1,0 +1,6 @@
+body {
+  margin: 0; }
+  body #main-part {
+    min-height: 100vh; }
+  body::-webkit-scrollbar {
+    display: none; }

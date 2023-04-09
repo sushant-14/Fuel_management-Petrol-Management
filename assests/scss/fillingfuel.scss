@@ -1,0 +1,99 @@
+.fillingfuel{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+
+    width:50%;
+    margin: auto;
+    text-align: center;
+    form{
+       select,input{
+        padding: 10px 20px;
+        display: block;
+        margin: auto;
+        margin-bottom:20px;
+        font-size: 20px;
+        border: none;
+        border-bottom: 2px solid black;
+        cursor: pointer;
+       } 
+
+    }
+    button{
+        padding: 10px 20px;
+        border:none;
+        border-radius: 10px;
+        margin:30px;
+        font-size: 20px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            text-transform: capitalize;
+            &:hover{
+                color:white
+            }
+        }
+        &:hover{
+            background-color: black;
+            color:white
+        }
+    }
+}
+
+.showStock{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+
+    width:50%;
+    margin: auto;
+    text-align: center;
+    table{
+        // text-align: center;
+        margin: auto;
+        th,td{
+            padding: 10px 20px;
+            font-size: 20px;
+            border-bottom: 2px solid black;
+        }
+    }
+}
+
+.update{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+
+    width:50%;
+    margin: auto;
+    text-align: center;
+    form{
+        input{
+         padding: 10px 20px;
+         margin: auto;
+         margin-bottom:20px;
+         font-size: 20px;
+         border: none;
+         border-bottom: 2px solid black;
+         cursor: pointer;
+        } 
+        label{
+            font-size: 20px;
+            display: block;
+
+        }
+ 
+     }
+     button{
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        a{
+            text-decoration: none;
+
+        }
+     }
+
+
+}
