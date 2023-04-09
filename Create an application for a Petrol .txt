@@ -1,0 +1,19 @@
+Create an application for a Petrol pump, The software should allow the user to add different fuels and corresponding quantities. Also, to simulate how vehicles request to fill up fuel, all the calculations must be tracked. show a detailed report of all the transactions between two dates, input by the user.
+1- Admin login page.
+2. Admin can add fuel types like- petrol, diesel, and CNG gas with their quantities.
+3. Admin is able to add more fuel.
+4.  A proper relationship in every database table means if the admin has added 100 liter petrol in his stock table and the buyer has bought 15 liter petrol then left 85 liter petrol can check admin from his stock table.
+5. USER-( PUMP STAFF) Login page.
+6. After giving the petrol he can check the details and give the slip to the customer.
+   In the slip details-
+Date- 18/01/22
+Day- MONDAY
+Time- 8:30am
+Customer name
+Type of fuel- petrol
+Quantity- 15 litter
+Amount- 100rs per litter ( it can show the auto-generated price of petrol)
+Total amount- 1500/-
+
+Type of payment- cash/card/UPI
+7. Admin can check the two dates and all the transaction details just like a bank statement of deposit and withdraw money on two dates.
