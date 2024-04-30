@@ -65,7 +65,7 @@ app.use(session({
     store:MongoStore.create(
         {
             // mongoUrl add and locate the path from mongoose.js
-            mongoUrl:'mongodb://localhost/petrol',
+            mongoUrl:'mongodb://127.0.0.1/petrol',
             mongooseConnection:db,
             autoRemove:'disabled'
         },
